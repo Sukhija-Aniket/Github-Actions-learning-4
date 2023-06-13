@@ -1,4 +1,4 @@
-name: Testing
+name: Deployment 
 on: push
 jobs:
     test:
@@ -18,3 +18,5 @@ jobs:
               run: npm run test
             - name: build
               run: npm run build
+            - name: Deployment Complete
+              run: echo "Job Deployment Complete"
