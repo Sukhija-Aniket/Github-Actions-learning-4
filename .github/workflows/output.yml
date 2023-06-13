@@ -5,4 +5,4 @@ jobs:
         runs-on: Ubuntu-latest
         steps:
             - name: output Metadata
-              run: echo ${{ toJSON(github.event) }} # improve it further
+              run: echo ${{ toJson(github.event) }} # improve it further
